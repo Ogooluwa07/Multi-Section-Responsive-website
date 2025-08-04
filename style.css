@@ -47,6 +47,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0 1rem;
 }
 .hero-text h2 {
   font-size: 3rem;
@@ -60,6 +61,10 @@ nav {
   text-decoration: none;
   font-size: 1rem;
   border-radius: 5px;
+  display: inline-block;
+}
+.hero-text .btn:hover {
+  background: #c9273b;
 }
 
 /* Section Styles */
@@ -94,13 +99,12 @@ nav {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  object-fit: cover;
 }
 
-/* Contact Info */
 #contact p {
   margin: 0.5rem 0;
 }
-
 /* Footer */
 footer {
   background: #111;
@@ -115,6 +119,7 @@ footer {
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
+    text-align: center;
   }
 
   .hero-text h2 {

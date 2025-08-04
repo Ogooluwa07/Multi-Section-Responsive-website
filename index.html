@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DelishBite Restaurant</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+  </style>
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -24,7 +31,7 @@
   <section class="hero">
     <div class="hero-text">
       <h2>Welcome to DelishBite</h2>
-      <p>Fresh. Authentic. Delicious. Tasty.</p>
+      <p>Fresh. Authentic. Delicious.</p>
       <a href="#menu" class="btn">View Menu</a>
     </div>
   </section>
@@ -64,7 +71,7 @@
     <div class="container">
       <h2>Contact Us</h2>
       <p>Email: ojoogooluwa96@gmail.com</p>
-      <p>Phone: +2349022033126</p>
+      <p>Phone: +234 902 203 3126</p>
       <p>Address: 123 Foodie Street, Ibadan, Nigeria</p>
     </div>
   </section>
@@ -74,5 +81,27 @@
       <p>&copy; 2025 DelishBite Restaurant. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.section', {
+      distance: '50px',
+      duration: 800,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      interval: 200,
+    });
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const message = document.getElementById('form-message');
+      message.style.display = 'block';
+      e.target.reset();
+      setTimeout(() => {
+        message.style.display = 'none';
+      }, 5000);
+    }
+
+  </script>
 </body>
-</html> 
+</html>
